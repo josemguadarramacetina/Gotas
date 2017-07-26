@@ -61,8 +61,4 @@ private:
     
 };
 
-
-
-
 #endif /* SM_H */
-
