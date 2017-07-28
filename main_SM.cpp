@@ -1,12 +1,14 @@
-/*El programa esta hecho para analizar secuencias de imagenes de patrones de gotas. La entrada principal del programa
+/*ESPAÑOL
+ * El programa esta hecho para analizar secuencias de imagenes de patrones de gotas. La entrada principal del programa
  * es una primera imagen de referencia a la cual se le extraen propiedades de los valores de radio de gota y se calcula una
  * distribucion con un tamano de clase determinado. Posteriormente el programa calcula tambien una distribucion de radio de gota
  * en una imagen sucesiva y las compara mediante la ecuacion de coagulacion de Smoluchowski. El algoritmo de comparacion modifica la
  * forma de la funcion Kernel de tal forma que se localizan los parametros que describen la forma funcional por la cual cambian los
  * valores del radio de una distribucion a otra. 
  * 
+ * ENGLISH
+ * 
  */
-
 /* 
  * File:   main_SM.cpp
  * Author: jose

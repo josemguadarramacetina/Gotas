@@ -21,7 +21,7 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU-Linux-x86
+CND_PLATFORM=GNU-Linux
 CND_DLIB_EXT=so
 CND_CONF=Debug
 CND_DISTDIR=dist
@@ -66,27 +66,27 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fotos_sm: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	g++ -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fotos_sm ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Funciones.o: Funciones.cpp 
+${OBJECTDIR}/Funciones.o: Funciones.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Funciones.o Funciones.cpp
 
-${OBJECTDIR}/Histogramas.o: Histogramas.cpp 
+${OBJECTDIR}/Histogramas.o: Histogramas.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Histogramas.o Histogramas.cpp
 
-${OBJECTDIR}/SM.o: SM.cpp 
+${OBJECTDIR}/SM.o: SM.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SM.o SM.cpp
 
-${OBJECTDIR}/SMKernel.o: SMKernel.cpp 
+${OBJECTDIR}/SMKernel.o: SMKernel.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SMKernel.o SMKernel.cpp
 
-${OBJECTDIR}/main_SM.o: main_SM.cpp 
+${OBJECTDIR}/main_SM.o: main_SM.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main_SM.o main_SM.cpp
@@ -97,7 +97,6 @@ ${OBJECTDIR}/main_SM.o: main_SM.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fotos_sm
 
 # Subprojects
 .clean-subprojects:
