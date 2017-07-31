@@ -101,7 +101,9 @@ private:
     string nombre;
     string bin_hist;
     string arxivhistoagua;
-
+    string textPromedio;
+    string textDesvstd;
+    string ejeY1;
 };
 
 
