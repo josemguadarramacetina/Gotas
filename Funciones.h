@@ -31,12 +31,12 @@
 using namespace std;
 using namespace cv;
 
-Mat& Rojo(Mat& src, Mat &dest);
+Mat& Rojo(Mat& src, Mat &dest);/*mezcla Azul y Rojo, salida*/
 
-Mat& Binarizar(Mat &imagen, Mat &threshold_output_imagen);
+Mat& Binarizar(Mat &imagen, Mat &threshold_output_imagen);/*imagen a binarizar, imagen binarizada*/
 
 vector<float>& Radios(vector<vector<Point>> &contours_frame1,
-        vector<float> &radios_f1);
+        vector<float> &radios_f1);/*contornos, vector de radios*/
 
 
 #endif /* FUNCIONES_H */
